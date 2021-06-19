@@ -1,7 +1,56 @@
+/* FONTES DO TUISTER */
+
+@font-face {
+  font-family: TwitterChirpExtendedHeavy;
+  src: url(https://abs.twimg.com/fonts/chirp-extended-heavy-web.woff2) format('woff2');
+  src: url(https://abs.twimg.com/fonts/chirp-extended-heavy-web.woff) format('woff');
+  font-weight: 800;
+  font-style: 'normal';
+  font-display: 'swap';
+}
+@font-face {
+  font-family: TwitterChirp;
+  src: url(https://abs.twimg.com/fonts/chirp-regular-web.woff2) format('woff2');
+  src: url(https://abs.twimg.com/fonts/chirp-regular-web.woff) format('woff');
+  font-weight: 400;
+  font-style: 'normal';
+  font-display: 'swap';
+}
+@font-face {
+  font-family: TwitterChirp;
+  src: url(https://abs.twimg.com/fonts/chirp-medium-web.woff2) format('woff2');
+  src: url(https://abs.twimg.com/fonts/chirp-medium-web.woff) format('woff');
+  font-weight: 500;
+  font-style: 'normal';
+  font-display: 'swap';
+}
+@font-face {
+  font-family: TwitterChirp;
+  src: url(https://abs.twimg.com/fonts/chirp-bold-web.woff2) format('woff2');
+  src: url(https://abs.twimg.com/fonts/chirp-bold-web.woff) format('woff');
+  font-weight: 700;
+  font-style: 'normal';
+  font-display: 'swap';
+}
+@font-face {
+  font-family: TwitterChirp;
+  src: url(https://abs.twimg.com/fonts/chirp-heavy-web.woff2) format('woff2');
+  src: url(https://abs.twimg.com/fonts/chirp-heavy-web.woff) format('woff');
+  font-weight: 800;
+  font-style: 'normal';
+  font-display: 'swap';
+}
+
+/* FIM DAS FONTES DO TUISTER */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: TwitterChirpExtendedHeavy, Verdana, sans-serif;
 }
 
 .body-container {
@@ -94,10 +143,16 @@
     flex-direction: column;
   }
 
+  .body-container .right-side .main-container .buttons-container button {
+    width: 314px;
+  }
+
   .body-container .right-side .main-container .buttons-container .signup {
     margin-bottom: 20px;
     font-size: 15px;
   }
+
+
 }
 
 /* Regra para telas abaixo de 1000px */
