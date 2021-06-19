@@ -30,7 +30,7 @@
   }
 }
 
-/* Regra para telas entre 1000px e 500px */
+/* Regra para telas abaixo de 1000px */
 @media screen and (max-width: 1000px) {
   .body-container {
     flex-direction: column-reverse;
@@ -38,10 +38,12 @@
 
   .body-container .right-side {
     height: 60%;
+    width: 100%;
   }
 
   .body-container .left-side {
     height: 40%;
+    width: 100%;
   }
 }
 
