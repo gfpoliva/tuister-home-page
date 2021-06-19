@@ -10,18 +10,72 @@
 }
 
 .body-container .left-side {
-  background-color: blue;
+  background-image: url(images/twitter-background.png);
+  background-size: cover;
   display: flex;
   justify-content: center;
-}
-
-.body-container .right-side {
-  background-color: black;
+  align-items: center;
 }
 
 .body-container .left-side .logo-twitter {
   padding: 0 40px;
   max-width: 450px;
+}
+
+.body-container .right-side {
+  background-color: black;
+  color: rgb(217, 217, 217);
+  display: flex;
+  align-items: center;
+}
+
+.body-container .right-side .main-container {
+  padding: 30px;
+}
+
+.body-container .right-side .main-container .logo-twitter {
+  width: 43px;
+}
+
+.body-container .right-side .main-container .title {
+  margin: 48px 0;
+  font-weight: 700;
+  font-size: 64px;
+  letter-spacing: -1.2px;
+}
+
+.body-container .right-side .main-container .subtitle {
+  margin-bottom: 32px;
+  line-height: 36px;
+  font-size: 31px;
+  font-weight: 700;
+}
+
+.body-container .right-side .main-container .buttons-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.body-container .right-side .main-container .buttons-container .signup {
+  background-color: rgb(29, 161, 242);
+  color: white;
+}
+
+.body-container .right-side .main-container .buttons-container .login {
+  background-color: black;
+  border-color: rgb(29, 161, 242);
+  color: rgb(29, 161, 242);
+}
+
+.body-container .right-side .main-container .buttons-container button {
+  padding: 0 32px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 9999px;
+  min-height: 48px;
+  font-weight: 700;
+  flex-grow: 1;
 }
 
 /* Regra para telas acima de 1000px */
@@ -33,7 +87,16 @@
   
   .body-container .right-side {
     height: 100vh;
-    width: 725px;
+    width: 755px;
+  }
+
+  .body-container .right-side .main-container .buttons-container {
+    flex-direction: column;
+  }
+
+  .body-container .right-side .main-container .buttons-container .signup {
+    margin-bottom: 20px;
+    font-size: 15px;
   }
 }
 
@@ -41,11 +104,6 @@
 @media screen and (max-width: 1000px) {
   .body-container {
     flex-direction: column-reverse;
-  }
-
-  .body-container .right-side {
-    height: 55%;
-    width: 100%;
   }
 
   .body-container .left-side {
@@ -56,9 +114,47 @@
   .body-container .left-side .logo-twitter {
     margin: 70px 0;
   }
+
+  .body-container .right-side {
+    height: 55%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .body-container .right-side .main-container {
+    max-width: 568px;
+  }
+
+  .body-container .right-side .main-container .buttons-container button {
+    max-width: 314px;
+  }
+
+  .body-container .right-side .main-container .buttons-container .signup {
+    margin-right: 20px;
+  }
+
 }
 
 /* Regra para telas abaixo de 500px */
 @media screen and (max-width: 500px) {
+  .body-container .right-side .main-container .title {
+    font-size: 40px;
+  }
 
+  .body-container .right-side .main-container .buttons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .body-container .right-side .main-container .buttons-container button {
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .body-container .right-side .main-container .buttons-container .signup {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  
 }
