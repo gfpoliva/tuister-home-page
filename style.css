@@ -11,10 +11,17 @@
 
 .body-container .left-side {
   background-color: blue;
+  display: flex;
+  justify-content: center;
 }
 
 .body-container .right-side {
   background-color: black;
+}
+
+.body-container .left-side .logo-twitter {
+  padding: 0 40px;
+  max-width: 450px;
 }
 
 /* Regra para telas acima de 1000px */
@@ -37,13 +44,17 @@
   }
 
   .body-container .right-side {
-    height: 60%;
+    height: 55%;
     width: 100%;
   }
 
   .body-container .left-side {
-    height: 40%;
+    height: 45%;
     width: 100%;
+  }
+
+  .body-container .left-side .logo-twitter {
+    margin: 70px 0;
   }
 }
 
