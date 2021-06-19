@@ -31,7 +31,7 @@
 }
 
 /* Regra para telas entre 1000px e 500px */
-@media screen and (max-width: 1000px) and (min-width: 500px) {
+@media screen and (max-width: 1000px) {
   .body-container {
     flex-direction: column-reverse;
   }
@@ -47,15 +47,5 @@
 
 /* Regra para telas abaixo de 500px */
 @media screen and (max-width: 500px) {
-  .body-container {
-    flex-direction: column-reverse;
-  }
 
-  .body-container .right-side {
-    height: 60vh;
-  }
-
-  .body-container .left-side {
-    height: 40vh;
-  }
 }
